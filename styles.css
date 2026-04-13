@@ -1,0 +1,12 @@
+*{
+  font-family: sans-serif;
+}
+
+head{
+  background-color: blue;
+}
+
+nav {
+  margin: 0px;
+  background-color: red;
+}
