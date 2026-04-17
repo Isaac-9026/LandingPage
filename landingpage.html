@@ -3,164 +3,157 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Landing Page</title>
-    
+    <title>EA Sports FC 26 - Landing Page</title>
+    <meta
+      name="description"
+      content="Descubre EA Sports FC 26: características, modos de juego, galería, gameplay y descarga."
+    />
+    <link rel="stylesheet" href="styles.css" />
   </head>
+
   <body>
 
-  <!-- Cursor + barra -->
-  <div id="cursor"></div>
-  <div id="cursor-ring"></div>
-  <div id="progress-bar"></div>
+    <header>
+      <nav aria-label="Navegación principal">
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#caracteristicas">Características</a></li>
+          <li><a href="#modos">Modos</a></li>
+          <li><a href="#galeria">Galería</a></li>
+          <li><a href="#video">Gameplay</a></li>
+          <li><a href="#descarga">Descarga</a></li>
+          <li><a href="#soporte">Soporte</a></li>
+        </ul>
+      </nav>
+    </header>
 
-  <header>
-    <nav>
-      <ul>
-        <li><a href="#inicio">Inicio</a></li>
-        <li><a href="#caracteristicas">Características</a></li>
-        <li><a href="#modos">Modos</a></li>
-        <li><a href="#galeria">Galería</a></li>
-        <li><a href="#video">Gameplay</a></li>
-        <li><a href="#descarga">Descarga</a></li>
-        <li><a href="#soporte">Soporte</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <main>
+    <main>
 
-    <!-- HERO -->
-    <section id="inicio">
-      <h1>EA SPORTS <span>FC 24</span></h1>
-      <p>Vive la emoción del fútbol como nunca antes</p>
+      <section id="inicio">
+        <h1>EA SPORTS <span>FC 26</span></h1>
+        <p>Vive la emoción del fútbol como nunca antes</p>
+      </section>
 
-      <div class="scroll-hint">
-        <span>Scroll</span>
-        <div class="arrow"></div>
-      </div>
-    </section>
+      <!--CARACTERÍSTICAS-->
+      <section id="caracteristicas">
+        <h2>Características</h2>
 
-    <!-- CARACTERÍSTICAS -->
-    <section id="caracteristicas">
-      <h2><span class="accent">Características</span></h2>
+        <div class="features-grid">
+          <article class="feature-card">
+            <h3>Jugabilidad IA</h3>
+            <p>Movimientos realistas con tecnología avanzada.</p>
+          </article>
 
-      <div class="features-grid">
-        <div class="feature-card reveal">
-          <div class="icon">🎮</div>
-          <h3>Jugabilidad IA</h3>
-          <p>HyperMotion3 con miles de capturas de movimiento reales.</p>
+          <article class="feature-card">
+            <h3>Estadios reales</h3>
+            <p>Licencias oficiales de las mejores ligas.</p>
+          </article>
+
+          <article class="feature-card">
+            <h3>Jugadores actualizados</h3>
+            <p>Datos reales y estadísticas dinámicas.</p>
+          </article>
+
+          <article class="feature-card">
+            <h3>Cross-Play</h3>
+            <p>Juega con usuarios de diferentes plataformas.</p>
+          </article>
         </div>
+      </section>
 
-        <div class="feature-card reveal">
-          <div class="icon">🏟️</div>
-          <h3>100+ Estadios</h3>
-          <p>Licencias oficiales de las mejores ligas del mundo.</p>
-        </div>
+      <!-- MODOS -->
+      <section id="modos">
+        <h2>Modos de Juego</h2>
 
-        <div class="feature-card reveal">
-          <div class="icon">⭐</div>
-          <h3>19,000 Jugadores</h3>
-          <p>Estadísticas y físico actualizados cada semana.</p>
-        </div>
-
-        <div class="feature-card reveal">
-          <div class="icon">📱</div>
-          <h3>Cross-Play</h3>
-          <p>Compite con jugadores en PS5, Xbox y PC.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- MODOS -->
-    <section id="modos">
-      <h2><span class="accent">Modos</span> de Juego</h2>
-
-      <div class="modos-list">
-        <div class="modo-item reveal">
-          <div class="modo-num">01</div>
-          <div class="modo-content">
+        <div class="modos-list">
+          <article class="modo-item">
             <h3>Modo Carrera</h3>
-            <p>Lleva a tu club hasta la gloria europea.</p>
-          </div>
-        </div>
+            <p>Lleva a tu equipo a la gloria.</p>
+          </article>
 
-        <div class="modo-item reveal">
-          <div class="modo-num">02</div>
-          <div class="modo-content">
+          <article class="modo-item">
             <h3>Ultimate Team</h3>
-            <p>Construye el equipo de tus sueños.</p>
-          </div>
+            <p>Crea el equipo de tus sueños.</p>
+          </article>
+
+          <article class="modo-item">
+            <h3>Multijugador Online</h3>
+            <p>Compite con jugadores de todo el mundo.</p>
+          </article>
         </div>
+      </section>
 
-        <div class="modo-item reveal">
-          <div class="modo-num">03</div>
-          <div class="modo-content">
-            <h3>Multijugador</h3>
-            <p>Compite contra jugadores de todo el mundo.</p>
-          </div>
+      <!-- GALERÍA -->
+      <section id="galeria">
+        <h2>Galería</h2>
+
+        <div class="gallery-grid">
+          <img src="img1.jpg" alt="Gameplay de EA Sports FC 26" />
+          <img src="img2.jpg" alt="Jugadores en partido de EA Sports FC 26" />
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- GALERÍA -->
-    <section id="galeria">
-      <h2><span class="accent">Galería</span></h2>
+      <!-- VIDEO -->
+      <section id="video">
+        <h2>Gameplay</h2>
 
-      <div class="gallery-grid">
-        <img src="img1.jpg" class="reveal" alt="Gameplay">
-        <img src="img2.jpg" class="reveal" alt="Jugadores">
-      </div>
-    </section>
+        <div class="video-wrapper">
+          <iframe
+            src="https://www.youtube.com/embed/cgDlmvU2sA4"
+            title="Gameplay de EA Sports FC 26"
+            loading="lazy"
+            allowfullscreen
+          >
+          </iframe>
+        </div>
+      </section>
 
-    <!-- VIDEO -->
-    <section id="video">
-      <h2><span class="accent">Gameplay</span></h2>
+      <!-- DESCARGA -->
+      <section id="descarga">
+        <h2>Jugar ahora</h2>
+        <p>Accede al sitio oficial para obtener el juego en tu plataforma.</p>
 
-      <div class="video-wrapper reveal">
-        <iframe width="560" height="315"
-          src="https://www.youtube.com/embed/cgDlmvU2sA4"
-          frameborder="0"
-          allowfullscreen>
-        </iframe>
-      </div>
-    </section>
+        <a
+          href="https://www.ea.com/es/games/ea-sports-fc/fc-26"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn-descarga"
+        >
+          Ver EA Sports FC 26 en sitio oficial
+        </a>
+      </section>
 
-    <!-- DESCARGA -->
-    <section id="descarga">
-      <h2><span class="accent">Descargar</span> Juego</h2>
-      <p class="reveal">Descarga ahora y vive la mejor experiencia de fútbol.</p>
-      <a href="#" class="btn-descarga">Descargar Ahora</a>
-    </section>
+      <!-- SOPORTE -->
+      <section id="soporte">
+        <h2>Soporte del Jugador</h2>
+        <p>¿Tienes problemas o sugerencias? Contáctanos.</p>
 
-    <!-- SOPORTE -->
-    <section id="soporte">
-      <h2><span class="accent">Soporte</span> del Jugador</h2>
+        <form>
+          <label for="nombre">Nombre de jugador</label>
+          <input type="text" id="nombre" name="nombre" required />
 
-      <form class="reveal">
-        <label>Nombre de jugador</label>
-        <input type="text" required>
+          <label for="correo">Correo electrónico</label>
+          <input type="email" id="correo" name="correo" required />
 
-        <label>Correo electrónico</label>
-        <input type="email" required>
+          <label for="modo">Modo de juego</label>
+          <select id="modo" name="modo">
+            <option value="carrera">Carrera</option>
+            <option value="ultimate">Ultimate Team</option>
+            <option value="multi">Multijugador</option>
+          </select>
 
-        <label>Modo de juego</label>
-        <select>
-          <option>Carrera</option>
-          <option>Ultimate Team</option>
-          <option>Multijugador</option>
-        </select>
+          <label for="mensaje">Describe tu problema</label>
+          <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
 
-        <label>Describe tu problema</label>
-        <textarea rows="4" required></textarea>
+          <button type="submit">Enviar reporte</button>
+        </form>
+      </section>
+    </main>
 
-        <button type="submit">Enviar reporte</button>
-      </form>
-
-  </main>
-
-  <footer>
-    <p>Redes sociales - 2026</p>
-  </footer>
-
-</body>
+    <!--FOOTER-->
+    <footer>
+      <p>&copy; 2026 EA Sports FC </p>
+    </footer>
+  </body>
 </html>
