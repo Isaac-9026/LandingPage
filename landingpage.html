@@ -4,9 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Landing Page</title>
-    <link rel="stylesheet" href="styles.css" />
+    
   </head>
   <body>
+
+  <!-- Cursor + barra -->
+  <div id="cursor"></div>
+  <div id="cursor-ring"></div>
+  <div id="progress-bar"></div>
 
   <header>
     <nav>
@@ -24,68 +29,134 @@
 
   <main>
 
+    <!-- HERO -->
     <section id="inicio">
-      <h1>EA Sports FC 24</h1>
+      <h1>EA SPORTS <span>FC 24</span></h1>
       <p>Vive la emoción del fútbol como nunca antes</p>
+
+      <div class="scroll-hint">
+        <span>Scroll</span>
+        <div class="arrow"></div>
+      </div>
     </section>
 
+    <!-- CARACTERÍSTICAS -->
     <section id="caracteristicas">
-      <h2>Características</h2>
-      <p>Gráficos realistas, jugadores licenciados y jugabilidad mejorada.</p>
+      <h2><span class="accent">Características</span></h2>
+
+      <div class="features-grid">
+        <div class="feature-card reveal">
+          <div class="icon">🎮</div>
+          <h3>Jugabilidad IA</h3>
+          <p>HyperMotion3 con miles de capturas de movimiento reales.</p>
+        </div>
+
+        <div class="feature-card reveal">
+          <div class="icon">🏟️</div>
+          <h3>100+ Estadios</h3>
+          <p>Licencias oficiales de las mejores ligas del mundo.</p>
+        </div>
+
+        <div class="feature-card reveal">
+          <div class="icon">⭐</div>
+          <h3>19,000 Jugadores</h3>
+          <p>Estadísticas y físico actualizados cada semana.</p>
+        </div>
+
+        <div class="feature-card reveal">
+          <div class="icon">📱</div>
+          <h3>Cross-Play</h3>
+          <p>Compite con jugadores en PS5, Xbox y PC.</p>
+        </div>
+      </div>
     </section>
 
+    <!-- MODOS -->
     <section id="modos">
-      <h2>Modos de Juego</h2>
-      <p>Modo carrera, Ultimate Team y multijugador online.</p>
+      <h2><span class="accent">Modos</span> de Juego</h2>
+
+      <div class="modos-list">
+        <div class="modo-item reveal">
+          <div class="modo-num">01</div>
+          <div class="modo-content">
+            <h3>Modo Carrera</h3>
+            <p>Lleva a tu club hasta la gloria europea.</p>
+          </div>
+        </div>
+
+        <div class="modo-item reveal">
+          <div class="modo-num">02</div>
+          <div class="modo-content">
+            <h3>Ultimate Team</h3>
+            <p>Construye el equipo de tus sueños.</p>
+          </div>
+        </div>
+
+        <div class="modo-item reveal">
+          <div class="modo-num">03</div>
+          <div class="modo-content">
+            <h3>Multijugador</h3>
+            <p>Compite contra jugadores de todo el mundo.</p>
+          </div>
+        </div>
+      </div>
     </section>
 
+    <!-- GALERÍA -->
     <section id="galeria">
-      <h2>Galería</h2>
-      <img src="img1.jpg" alt="Gameplay">
-      <img src="img2.jpg" alt="Jugadores">
+      <h2><span class="accent">Galería</span></h2>
+
+      <div class="gallery-grid">
+        <img src="img1.jpg" class="reveal" alt="Gameplay">
+        <img src="img2.jpg" class="reveal" alt="Jugadores">
+      </div>
     </section>
 
+    <!-- VIDEO -->
     <section id="video">
-      <h2>Gameplay</h2>
-      <iframe width="560" height="315"
-        src="https://www.youtube.com/embed/VIDEO_ID"
-        title="Gameplay"
-        frameborder="0"
-        allowfullscreen>
-      </iframe>
+      <h2><span class="accent">Gameplay</span></h2>
+
+      <div class="video-wrapper reveal">
+        <iframe width="560" height="315"
+          src="https://www.youtube.com/embed/cgDlmvU2sA4"
+          frameborder="0"
+          allowfullscreen>
+        </iframe>
+      </div>
     </section>
 
+    <!-- DESCARGA -->
     <section id="descarga">
-      <h2>Descargar Juego</h2>
-      <p>Descarga ahora y vive la mejor experiencia de fútbol.</p>
-      <button>Descargar Ahora</button>
+      <h2><span class="accent">Descargar</span> Juego</h2>
+      <p class="reveal">Descarga ahora y vive la mejor experiencia de fútbol.</p>
+      <a href="#" class="btn-descarga">Descargar Ahora</a>
     </section>
 
+    <!-- SOPORTE -->
     <section id="soporte">
-      <h2>Soporte</h2>
-      <form>
-        <label for="nombre">Nombre de jugador</label>
-        <input type="text" id="nombre" placeholder="Tu nombre" required>
+      <h2><span class="accent">Soporte</span> del Jugador</h2>
 
-        <label for="correo">Correo electrónico</label>
-        <input type="email" id="correo" placeholder="tu@email.com" required>
+      <form class="reveal">
+        <label>Nombre de jugador</label>
+        <input type="text" required>
 
-        <label for="modo">Modo de juego</label>
-        <select id="modo">
+        <label>Correo electrónico</label>
+        <input type="email" required>
+
+        <label>Modo de juego</label>
+        <select>
           <option>Carrera</option>
           <option>Ultimate Team</option>
           <option>Multijugador</option>
         </select>
-        
-        <label for="mensaje">Describe tu problema</label>
-        <textarea id="mensaje" rows="4" placeholder="Escribe aquí tu consulta..." required></textarea>
 
-        <button>Enviar</button>
+        <label>Describe tu problema</label>
+        <textarea rows="4" required></textarea>
+
+        <button type="submit">Enviar reporte</button>
       </form>
-    </section>
 
   </main>
-
 
   <footer>
     <p>Redes sociales - 2026</p>
