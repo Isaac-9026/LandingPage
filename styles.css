@@ -1,10 +1,14 @@
 :root {
   --color-primary: #00e676;
   --color-bg: #080c0a;
+  --color-bg-alt: #0d1512;
   --color-text: #e0f2e9;
   --color-muted: #6b8c7a;
   --font-title: "Bebas Neue", sans-serif;
   --font-body: "DM Sans", sans-serif;
+  --color-card: #131f19;
+  --color-border: rgba(0, 230, 118, 0.18);
+  --radius: 8px;
 }
 
 *,
@@ -31,6 +35,7 @@ h2 {
   font-size: clamp(2.5rem, 7vw, 5rem);
   color: white;
   margin-bottom: 1rem;
+  text-align: center;
 }
 
 /* NAV */
@@ -40,7 +45,6 @@ header {
   z-index: 100;
   padding: 0.8rem 2rem;
   background: transparent;
-
 }
 
 nav ul {
@@ -90,7 +94,8 @@ nav a.active {
 
 /* Animación suave (no agresiva) */
 @keyframes glowMove {
-  0%, 100% {
+  0%,
+  100% {
     transform: scale(1);
     opacity: 1;
   }
@@ -99,7 +104,6 @@ nav a.active {
     opacity: 0.75;
   }
 }
-
 
 #inicio h1 {
   font-family: var(--font-title);
@@ -130,4 +134,66 @@ nav a.active {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+/* Division de colores base en secciones */
+section {
+  padding: 6rem 2rem;
+}
+
+#caracteristicas {
+  background: var(--color-bg-alt);
+}
+#galeria {
+  background: var(--color-bg-alt);
+}
+#descarga {
+  background: var(--color-bg-alt);
+  text-align: center;
+}
+
+/* SECCION: caracteristiicas */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.2rem;
+  margin-top: 2rem;
+}
+
+.feature-card {
+  background: var(--color-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  padding: 0;
+  text-align: center;
+  transition: transform 0.4s ease, border-color 0.4s ease, box-shadow 0.4s ease;
+}
+
+.feature-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.feature-card h3 {
+  margin-top: 1rem;
+  color: white;
+}
+
+.feature-card p {
+  padding: 0 1rem 1.2rem;
+  color: var(--color-muted);
+  font-size: 0.9rem;
+}
+
+.feature-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0, 230, 118, 0.15);
+}
+
+.feature-card:hover img {
+  transform: scale(1.08);
 }
