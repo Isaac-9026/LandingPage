@@ -152,7 +152,7 @@ section {
   text-align: center;
 }
 
-/* SECCION: caracteristiicas */
+/* SECCION: caracteristiicas y modos de juego */
 .features-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -197,3 +197,4 @@ section {
 .feature-card:hover img {
   transform: scale(1.08);
 }
+
