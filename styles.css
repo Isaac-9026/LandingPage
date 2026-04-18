@@ -325,3 +325,31 @@ button[type="submit"]:hover {
   color: var(--color-bg);
 }
 
+/* footer*/
+
+footer {
+  border-top: 1px solid var(--color-border);
+  text-align: center;
+  padding: 2rem 1rem;
+  color: var(--color-muted);
+  font-size: .8rem;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+}
+.social {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.social a {
+  color: var(--color-muted);
+  font-size: 1.2rem;
+}
+
+.social a:hover {
+  color: var(--color-primary);
+  transform: translateY(-3px) scale(1.1);
+  text-shadow: 0 0 10px var(--color-primary);
+}
